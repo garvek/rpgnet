@@ -16,4 +16,15 @@ return [
         'path' => './assets/app.js',
         'entrypoint' => true,
     ],
+    'cash-dom' => [
+        'version' => '8.1.5',
+    ],
+    'bulma/css/bulma.min.css' => [
+        'version' => '1.0.1',
+        'type' => 'css',
+    ],
+    '@fortawesome/fontawesome-free/css/all.css' => [
+        'version' => '6.5.2',
+        'type' => 'css',
+    ],
 ];

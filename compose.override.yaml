@@ -1,6 +1,11 @@
 version: '3'
 
 services:
+  adminer:
+    image: adminer
+    ports:
+      - '8080:8080'
+
 ###> doctrine/doctrine-bundle ###
   database:
     ports:
