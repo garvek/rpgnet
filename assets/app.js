@@ -5,7 +5,7 @@
  * which should already be in your base.html.twig.
  */
 import './styles/app.css';
-import 'bulma';
-import 'fontawesome';
+import 'bulma/css/bulma.min.css';
+import '@fortawesome/fontawesome-free/css/all.css';
 
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+console.log('Application successfully initialized.');

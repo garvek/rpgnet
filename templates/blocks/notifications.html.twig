@@ -1,0 +1,8 @@
+{% if notifications is defined %}
+    {% for notification in notifications %}
+    <div class="notification is-primary">
+        <button class="delete"></button>
+        {{ notification }}
+    </div>
+    {% endfor %}
+{% endif %}
