@@ -1,5 +1,0 @@
-services:
-  php:
-    build: .
-    volumes:
-      - ..:/home/server
