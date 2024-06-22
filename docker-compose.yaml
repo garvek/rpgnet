@@ -1,11 +1,16 @@
 services:
   php:
-    build: docker
+    image: docker_php
+    build: .
+    command: sh -c "composer update && symfony server:start"
+    ports:
+      - "8000:8000"
     volumes:
       - .:/home/server
 
 ###> doctrine/doctrine-bundle ###
   database:
+    env_file: .env.local
     image: postgres:${POSTGRES_VERSION:-16}-alpine
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-app}
